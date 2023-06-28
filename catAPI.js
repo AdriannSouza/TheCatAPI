@@ -20,15 +20,20 @@ async function exibe() {
 
     try {
         const gatos = await fetchData();
-        let sec_cats = document.querySelector('.cats')
+        let sec_cats = document.querySelector('.cats');
+        const width_resolution = window.innerWidth;
 
         gatos.forEach(eCat => { {
                 console.log(eCat);
-                sec_cats.innerHTML = `
-                <div class="cat-card">
-                    <img class="foto" src="${eCat.url}" alt="">
-                </div>
-                `
+                if (eCat.width <= width_resolution) {
+                    const catCardHTML = `
+                    <div class="cat-card">
+                        <img class="foto" src="${eCat.url}" alt="">
+                    </div>
+                    `;
+                    sec_cats.insertAdjacentHTML('afterbegin', catCardHTML);
+
+                } else {exibe()}
             }
         });
 

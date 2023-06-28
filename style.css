@@ -1,19 +1,20 @@
 
 .cats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
 }  
 
 .cat-card {
-    width: fit-content;
     background-color: #f1f1f1;
+    height: 50vh;
 }
 
 .cat-card img {
-    height: 50vh;
     width: auto;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
+    background-size: cover;
 }
 
 #random {

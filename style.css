@@ -1,0 +1,25 @@
+
+.cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}  
+
+.cat-card {
+    width: fit-content;
+    background-color: #f1f1f1;
+}
+
+.cat-card img {
+    height: 50vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+#random {
+    padding: 20px 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    background: fixed;
+}

@@ -1,5 +1,5 @@
 var btn = document.querySelector('#random')
-btn.addEventListener('click', function() {exibe()} )
+btn.addEventListener('click', function () { exibe() })
 
 // Requisição da WEB
 async function fetchData() {
@@ -21,21 +21,17 @@ async function exibe() {
     try {
         const gatos = await fetchData();
         let sec_cats = document.querySelector('.cats');
-        const width_resolution = window.innerWidth;
 
-        gatos.forEach(eCat => { {
-                console.log(eCat);
-                if (eCat.width <= width_resolution) {
-                    const catCardHTML = `
-                    <div class="cat-card">
-                        <img class="foto" src="${eCat.url}" alt="">
-                    </div>
-                    `;
-                    sec_cats.insertAdjacentHTML('afterbegin', catCardHTML);
+        gatos.forEach(eCat => {
+            console.log(eCat);
 
-                } else {exibe()}
-            }
+            const catCardHTML = `
+                <div class="cat-card">
+                    <img class="foto" src="${eCat.url}" alt="">
+                </div>
+                `;
+            sec_cats.insertAdjacentHTML('afterbegin', catCardHTML);
         });
 
-    } catch (error) {console.error(error)}
+    } catch (error) { console.error(error) }
 }

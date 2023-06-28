@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header, button#random {
+    background-color: #1C1C1C;
+    width: 100vw;
+    height: 15vh;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#div_btn {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
 
 .cats {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     white-space: nowrap;
+    height: 70vh;
 }  
 
 .cat-card {
     background-color: #f1f1f1;
-    height: 50vh;
+    height: 100%;
 }
 
 .cat-card img {
     width: auto;
     height: 100%;
     background-size: cover;
-}
-
-#random {
-    padding: 20px 40px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 20px;
-    background: fixed;
 }

@@ -1,6 +1,7 @@
-var btn = document.querySelector('.random')
-btn.addEventListener('click', function () { exibe() })
+var btncat = document.querySelector('#cat')
+btncat.addEventListener('click', function () { exibe() })
 
+var message = document.querySelector('.message')
 
 // Requisição da WEB
 async function fetchData() {
@@ -18,10 +19,11 @@ async function fetchData() {
 async function exibe() {
 
     try {
-        const gato = await fetchData();
+        if (message) {message.remove()}
+        const obj = await fetchData();
         let sec_cats = document.querySelector('.cats');
         
-        gato.forEach(eCat => {
+        obj.forEach(eCat => {
             const catCardHTML = `
                 <div class="cat-card">
                     <img class="foto" src="${eCat.url}" alt="">

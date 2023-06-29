@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: row;
   overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
   background-color: #EFEFF2;
   height: 65vh;

@@ -1,0 +1,13 @@
+/* Partials */
+@import './partials/_cats.sass';
+@import './partials/_header.sass';
+
+/* External */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+* {
+    color: #EFEFF2;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}

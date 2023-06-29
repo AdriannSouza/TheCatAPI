@@ -4,7 +4,6 @@ btn.addEventListener('click', function () { exibe() })
 // Requisição da WEB
 async function fetchData() {
     let data = [];
-
     try {
         const response = await fetch("https://api.thecatapi.com/v1/images/search");
 
@@ -12,7 +11,6 @@ async function fetchData() {
 
     } catch (error) { console.error(error); return [] }
 
-    //Volta um array quando for chamada.
     return data;
 }
 
@@ -24,7 +22,6 @@ async function exibe() {
 
         gatos.forEach(eCat => {
             console.log(eCat);
-
             const catCardHTML = `
                 <div class="cat-card">
                     <img class="foto" src="${eCat.url}" alt="">

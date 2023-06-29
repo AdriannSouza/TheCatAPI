@@ -44,6 +44,10 @@ header nav, footer nav {
 header nav a, footer nav a {
   text-decoration: none;
 }
+header nav a:hover, footer nav a:hover {
+  font-size: 20px;
+  transition: 0.3s;
+}
 
 #div_btn {
   height: 100%;
@@ -72,7 +76,8 @@ button#random #paw_ico {
 }
 
 #random:hover {
-  font-size: 1.45em;
+  font-size: 1.43em;
+  transition: 0.2s;
 }
 
 /* External */

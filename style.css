@@ -13,7 +13,7 @@
 
 .cat-card {
   background-color: #1C1C1C;
-  height: 71vh;
+  height: 66vh;
 }
 .cat-card img.foto {
   width: auto;
@@ -23,7 +23,7 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  height: 5px;
 }
 
 header {
@@ -66,25 +66,25 @@ footer {
   align-items: center;
 }
 
-button#random {
+button.random {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px;
+  padding: 8px;
   font-size: 1.2em;
   border-radius: 8px;
   border: 1px solid #EFEFF2;
   background-color: #1C1C1C;
 }
-button#random p {
+button.random p {
   margin-top: 3px;
 }
-button#random #paw_ico {
+button.random #paw_ico {
   height: 30px;
   width: auto;
 }
-#random:hover {
+.random:hover {
   font-size: 1.3em;
   transition: 0.2s;
 }

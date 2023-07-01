@@ -1,0 +1,48 @@
+@import '../general/set'
+    
+.collapsed
+    display: none !important
+
+.insert_modal
+    @include align()
+    position: fixed
+    z-index: 1
+    width: 100%
+    height: 100%
+    background-color: #0000006f
+
+    #modal
+        border: 1px solid black
+        border-radius: 10px
+        width: fit-content
+        height: auto
+        background-color: $branco
+
+        .modal-content
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            height: 160px
+            width: fit-content
+            padding: 30px 40px
+            
+            .modal-header
+                height: 20%
+            .modal-body
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                height: 60%
+                a
+                    text-decoration: none
+
+            .modal-footer
+                height: fit-content
+                justify-self: right
+
+                button
+                    margin-top: 10px
+                    padding: 5px 10px
+                    width: 100%
+

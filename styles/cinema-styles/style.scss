@@ -1,0 +1,17 @@
+/* Partials */
+@import './partials-style/_cats.sass';
+@import './partials-style/_header.sass';
+@import './partials-style/_footer.sass';
+@import './partials-style/_button.sass';
+@import './partials-style/_message.sass';
+@import '../modal-styles/_modal.sass';
+@import '../general/_set.sass';
+
+/* External */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}

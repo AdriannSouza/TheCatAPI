@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatTime!</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/cinema-styles/style.css">
 </head>
+<section class="insert_modal collapsed">
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sobre:</h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Feito por <a href="">&copy;Adrian Faria</a>
+                </p>
+                <p>utilizando <a href="">&copy;TheCatAPI</p>
+            </div>
+            <div class="modal-footer">
+                <button>Fechar</button>
+            </div>
+        </div>
+    </div>
+</section>
 <body>
-
     <header>
         <nav>
-            <li><a href="">Mural</a></li>
-            <li><a href="">About</a></li>
+            <li><a id="about_modal" href="#">Sobre</a></li>
         </nav>
     </header>
 
     <main>
-
         <section class="cats">
             <div class="message">
                 <img src="img/rotate_gif.gif" class="rotate-gif" alt="">
@@ -27,11 +41,13 @@
             </div>
         </section>
     </main>
+
+    
     
     <footer>
         <div id="div_btn">
             <button id="cat" class="random">
-                <p>Cat time!</p>   
+                Cat time!
             </button>
         </div>
     </footer>

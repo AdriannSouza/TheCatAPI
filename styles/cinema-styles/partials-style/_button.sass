@@ -1,0 +1,23 @@
+@import '../../general/_set'
+    
+#div_btn
+    @include align()
+    height: 100%
+    font-size: 1.2rem
+
+    button.random
+        @include align()
+        gap: 10px
+        padding: 0.7rem 1rem
+        font-size: 1.2em
+        border-radius: 8px
+        border: 1px solid $branco
+        background-color: $preto
+        color: $branco
+
+    .random:hover
+        font-size: 1.3em
+        transition: 0.3s
+        cursor: pointer
+        background-color: $branco
+        color: $preto

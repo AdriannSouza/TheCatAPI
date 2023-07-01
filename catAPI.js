@@ -1,6 +1,13 @@
 var btncat = document.querySelector('#cat')
 btncat.addEventListener('click', function () { exibe() })
 
+var insert_modal = document.querySelector('.insert_modal');
+var about_modal= document.querySelector('#about_modal');
+
+about_modal.addEventListener('click', function() {
+    insert_modal.classList.toggle('collapsed')
+})
+
 var message = document.querySelector('.message')
 
 // Requisição da WEB

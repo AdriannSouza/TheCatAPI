@@ -1,6 +1,7 @@
+@import '../../general/_set'
+    
 .cats
-    display: flex
-    align-items: center
+    @include align()
     flex-direction: row
     overflow-x: scroll
     overflow-y: hidden
@@ -17,4 +18,5 @@
         height: 70vh
         background-size: cover
         background-attachment: fixed
+        object-fit: cover
 
